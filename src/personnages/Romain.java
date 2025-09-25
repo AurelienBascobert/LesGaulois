@@ -9,6 +9,11 @@ public class Romain {
         this.force = force;
     }
 
+    public static void main(String[] args) {
+
+
+    }
+
     public String getNom() {
         return nom;
     }
