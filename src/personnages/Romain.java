@@ -14,6 +14,22 @@ public class Romain {
 
     }
 
+    @Override
+    public String toString() {
+        return nom;
+    }
+
+    public void recevoirCoup(int forceCoup){
+        force = force - forceCoup;
+        if (force <= 0){
+            System.out.println(prendreParole()+" J'abandonne. ");
+        }
+        else {
+            System.out.println(prendreParole()+" Aïe");
+        }
+    }
+
+
     public String getNom() {
         return nom;
     }
@@ -27,5 +43,7 @@ public class Romain {
 
     }
 
-
+    public int getForce() {
+        return force;
+    }
 }
